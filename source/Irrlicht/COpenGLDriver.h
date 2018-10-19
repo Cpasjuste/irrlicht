@@ -14,6 +14,7 @@ namespace irr
 	class CIrrDeviceWin32;
 	class CIrrDeviceLinux;
 	class CIrrDeviceSDL;
+	class CIrrDeviceSwitch;
 	class CIrrDeviceMacOSX;
 }
 

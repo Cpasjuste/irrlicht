@@ -98,7 +98,11 @@
 #define _IRR_LINUX_PLATFORM_
 #endif
 #define _IRR_POSIX_API_
+#if defined(__SWITCH__)
+#define _IRR_COMPILE_WITH_SWITCH_DEVICE_
+#else
 #define _IRR_COMPILE_WITH_X11_DEVICE_
+#endif
 #endif
 
 

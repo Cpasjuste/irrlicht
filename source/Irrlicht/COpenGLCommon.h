@@ -52,9 +52,17 @@
 	#else
 		#define GL_GLEXT_PROTOTYPES 1
 		#define GLX_GLXEXT_PROTOTYPES 1
-	#endif
+    #endif
+#ifdef __SWITCH__
+	#include <glad/glad.h>
+    //#include <GL/gl.h>
+	//#include <GL/glext.h>
+    #define GL_GENERATE_MIPMAP 0
+    #define GL_GENERATE_MIPMAP_HINT 0
+#else
 	#include <GL/gl.h>
 	#include <GL/glx.h>
+#endif
 	#if defined(_IRR_OPENGL_USE_EXTPOINTER_)
 	#include "glext.h"
 	#undef GLX_ARB_get_proc_address
